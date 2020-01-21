@@ -30,7 +30,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'sqlite3', '1.4.1'
+  gem 'sqlite3', '~> 1.4'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
@@ -45,9 +45,9 @@ end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
+  gem 'selenium-webdriver',  '3.142.4'
   # Easy installation and use of web drivers to run system tests with browsers
-  gem 'webdrivers'
+  gem 'webdrivers',   '4.1.2'
 end
 group :production do
   gem 'pg', '1.1.4'
